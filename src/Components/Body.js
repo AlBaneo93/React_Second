@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import {Route} from "react-router-dom";
 import Home from "./Home";
-import Login from "./Login";
-import About from "./About";
+import Login from "./User/Login";
+import About from "./User/About";
 
 const Body = ({userStateHandler}) => {
 

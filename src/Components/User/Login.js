@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import http from '../Utils/http'
+import http from '../../Utils/http'
 import {useHistory} from "react-router";
 
 
@@ -36,9 +36,7 @@ const Login = ({loginUserHandler}) => {
         http
             .post("/member", tmpuser)
             .then(res => {
-                console.log("Server Response")
                 console.log(res)
-                console.log("Server Response")
             })
             .catch(err => {
                 console.log(err)

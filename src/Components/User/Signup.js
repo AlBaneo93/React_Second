@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {useHistory} from "react-router";
-import http from '../Utils/http'
+import http from '../../Utils/http'
 
 
 const SignUp = () => {
