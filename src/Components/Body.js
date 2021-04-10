@@ -6,6 +6,7 @@ import About from "./User/About";
 import BoardList from "./Board/BoardList";
 import NotFound from "./ErrorComponents/NotFound";
 import ModalParent from "./Modal/ModalParent";
+import BoardWrite from "./Board/Boardwrite";
 
 const Body = ({userStateHandler}) => {
 
@@ -18,11 +19,13 @@ const Body = ({userStateHandler}) => {
                 {/*login*/}
                 <Route path="/login" exact render={() => <Login loginUserHandler={userStateHandler}/>}/>
                 {/*board*/}
-                <Route path="/board" render={() => <BoardList/>}/>
+                <Route path="/boardlist" render={() => <BoardList/>}/>
                 {/*info*/}
                 <Route path="/about" exact
                        render={() => <About/>}
                 />
+                {/*Board Writer Componenet*/}
+                <Route path="/write" exact render={() => <BoardWrite/>}/>
                 {/*Error Page Component*/}
                 <Route render={() => <NotFound/>}/>
             </Switch>

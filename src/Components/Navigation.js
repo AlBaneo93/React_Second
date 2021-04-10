@@ -24,7 +24,7 @@ const Navigation = ({user, userLogout}) => {
             </button>
           )
         }
-        <Link to="/board">
+        <Link to="/boardlist">
           <button>Board</button>
         </Link>
 
